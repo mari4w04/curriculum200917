@@ -362,6 +362,24 @@ td{
 /*Table________End*/
 
 
+.program-el-title{
+  color: var(--white);
+  background-color: var(--purple);
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid var(--white);
+  padding: 20px;
+    border-collapse: collapse;
+}
+.program-el-element{
+  border: 1px solid var(--white);
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+
+  background-color: var(--lightpurple);
+}
+
 /*Modal Style______Start*/
 .modal-column{
     width: 100%;
@@ -553,9 +571,49 @@ td{
 .burger-menu-container{
     display: none;
 }
-
+.program-elements-div{
+    display: none;
+}
+.program-elements-table{
+    display: block;
+}
+@media only screen and (max-width : 1210px){
+    .close-button-block:before, .close-button-block:after{
+        background: var(--gray);
+    }
+    .close-exam-modal1, .close-exam-modal2, .close-exam-modal3, .close-exam-modal4, .close-modal2, .close-animatedModal, .close-modal3, .close-modal4{
+        margin-top: 45px;
+    }
+}
 @media only screen and (max-width : 1028px){
-
+    .modal-column {
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+    }
+    #demo01, #demo04, #demo02, #demo03, #exam2, #exam3, #exam1, #exam4{
+        border-top: 2px solid white !important;
+    }
+    #demo02, #demo03{
+        background-color: var(--pink) !important;
+        color: white;
+    }
+    #exam2, #exam3{
+        background-color: var(--blue) !important;
+        color: white;
+    }
+    .pink-text, .blue-text{
+        border: 1.5px solid white;
+        color: white;
+    }
+    .area-btn {
+        padding: 30px;
+    }
+    .program-elements-table{
+        display: none;
+    }
+    .program-elements-div{
+        display: block;
+    }
     .desktop-menu{
         display: none;
     }
@@ -656,6 +714,13 @@ td{
       -webkit-transition: max-height 0.5s ease-in-out;
       transition: max-height 0.5s ease-in-out;
     }
+}
+@media only screen and (max-width : 400px){
+
+    .burger-menu-container{
+        padding-left: 20px !important;
+    }
+
 }
 
 /*Burger menu end------------*/

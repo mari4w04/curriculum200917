@@ -20,97 +20,133 @@ $("#exam4").animatedModal({modalTarget:'exam-modal4'});
 
 window.slide = new SlideNav();
 
+let bm = document.querySelector('.burger-menu-container');
 
+bm.querySelectorAll('a').forEach(function(link){
+    link.addEventListener('click', function(){
+        document.querySelector('#burger-check').checked=false;
+
+    })
+})
 /*Link01*/
-let linkcolor1=document.querySelector("#color1");
+let linkcolor1=document.querySelectorAll(".color1");
 
-linkcolor1.addEventListener("mouseover", mouseover01);
-linkcolor1.addEventListener("mouseout", mouseout01);
+linkcolor1.forEach(function(l){
+    l.addEventListener("mouseover", mouseover01);
+    l.addEventListener("mouseout", mouseout01);
+})
 
-function mouseover01(){
-  console.log("mouseoverFunction");
-  linkcolor1.style.color = "#222";
-  linkcolor1.style.borderBottomColor = "#FF8C00";
+
+
+function mouseover01(e){
+  console.log("mouseoverFunction", e.target);
+  e.target.style.color = "#222";
+  e.target.style.borderBottomColor = "#FF8C00";
 }
 
-function mouseout01() {
-  linkcolor1.style.color = "#222";
+function mouseout01(e) {
+  e.target.style.color = "#222";
 }
 
 
-/*Link02*/
-let linkcolor2=document.querySelector("#color2");
-linkcolor2.addEventListener("mouseover", mouseover02);
-linkcolor2.addEventListener("mouseout", mouseout02);
+/*Link02 #5600d9*/
+let linkcolor2=document.querySelectorAll(".color2");
 
-function mouseover02(){
-  console.log("mouseoverFunction");
-  linkcolor2.style.color = "#222";
-  linkcolor2.style.borderBottomColor = "#5600d9";
+linkcolor2.forEach(function(l){
+    l.addEventListener("mouseover", mouseover02);
+    l.addEventListener("mouseout", mouseout02);
+})
+
+
+
+function mouseover02(e){
+  console.log("mouseoverFunction", e.target);
+  e.target.style.color = "#222";
+  e.target.style.borderBottomColor = "#5600d9";
 }
 
-function mouseout02() {
-  linkcolor2.style.color = "#222";
+function mouseout02(e) {
+  e.target.style.color = "#222";
 }
 
-/*Link03*/
-let linkcolor3=document.querySelector("#color3");
-linkcolor3.addEventListener("mouseover", mouseover3);
-linkcolor3.addEventListener("mouseout", mouseout03);
+/*Link03 d900aa*/
+let linkcolor3=document.querySelectorAll(".color3");
 
-function mouseover3(){
-  console.log("mouseoverFunction");
-  linkcolor3.style.color = "#222";
-  linkcolor3.style.borderBottomColor = "#d900aa";
+linkcolor3.forEach(function(l){
+    l.addEventListener("mouseover", mouseover03);
+    l.addEventListener("mouseout", mouseout03);
+})
+
+
+
+function mouseover03(e){
+  console.log("mouseoverFunction", e.target);
+  e.target.style.color = "#222";
+  e.target.style.borderBottomColor = "#d900aa";
 }
 
-function mouseout03() {
-  linkcolor3.style.color = "#222";
+function mouseout03(e) {
+  e.target.style.color = "#222";
 }
 
-/*Link04*/
-let linkcolor4=document.querySelector("#color4");
-linkcolor4.addEventListener("mouseover", mouseover4);
-linkcolor4.addEventListener("mouseout", mouseout04);
+/*Link04 0078d9*/
+let linkcolor4=document.querySelectorAll(".color4");
 
-function mouseover4(){
-  console.log("mouseoverFunction");
-  linkcolor4.style.color = "#222";
-  linkcolor4.style.borderBottomColor = "#0078d9";
+linkcolor4.forEach(function(l){
+    l.addEventListener("mouseover", mouseover04);
+    l.addEventListener("mouseout", mouseout04);
+})
+
+
+
+function mouseover04(e){
+  console.log("mouseoverFunction", e.target);
+  e.target.style.color = "#222";
+  e.target.style.borderBottomColor = "#0078d9";
 }
 
-function mouseout04() {
-  linkcolor4.style.color = "#222";
+function mouseout04(e) {
+  e.target.style.color = "#222";
 }
 
-/*Link05*/
-let linkcolor5=document.querySelector("#color5");
-linkcolor5.addEventListener("mouseover", mouseover5);
-linkcolor5.addEventListener("mouseout", mouseout05);
+/*Link05 D90000*/
+let linkcolor5=document.querySelectorAll(".color5");
 
-function mouseover5(){
-  console.log("mouseoverFunction");
-  linkcolor5.style.color = "#222";
-  linkcolor5.style.borderBottomColor = "#D90000";
+linkcolor5.forEach(function(l){
+    l.addEventListener("mouseover", mouseover05);
+    l.addEventListener("mouseout", mouseout05);
+})
+
+
+
+function mouseover05(e){
+  console.log("mouseoverFunction", e.target);
+  e.target.style.color = "#222";
+  e.target.style.borderBottomColor = "#D90000";
 }
 
-function mouseout05() {
-  linkcolor5.style.color = "#222";
+function mouseout05(e) {
+  e.target.style.color = "#222";
 }
 
-/*Link06*/
-let linkcolor6=document.querySelector("#color6");
-linkcolor6.addEventListener("mouseover", mouseover6);
-linkcolor6.addEventListener("mouseout", mouseout06);
+/*Link06 04756F*/
+let linkcolor6=document.querySelectorAll(".color6");
 
-function mouseover6(){
-  console.log("mouseoverFunction");
-  linkcolor6.style.color = "#222";
-  linkcolor6.style.borderBottomColor = "#04756F";
+linkcolor6.forEach(function(l){
+    l.addEventListener("mouseover", mouseover06);
+    l.addEventListener("mouseout", mouseout06);
+})
+
+
+
+function mouseover06(e){
+  console.log("mouseoverFunction", e.target);
+  e.target.style.color = "#222";
+  e.target.style.borderBottomColor = "#04756F";
 }
 
-function mouseout06() {
-  linkcolor6.style.color = "#222";
+function mouseout06(e) {
+  e.target.style.color = "#222";
 }
 
 let coreareafile = "coreareas.json";

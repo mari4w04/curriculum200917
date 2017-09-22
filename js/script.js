@@ -312,8 +312,9 @@ function show(json){
         clone7.querySelector('.re-exam32').textContent = json[6].reExam;
         clone7.querySelector('.re-exam-illness32').textContent = json[6].reExamDueToIllness;
 
-        exam3.appendChild(clone7);
         exam3.appendChild(clone6);
+        exam3.appendChild(clone7);
+
 
 
         let clone8 = template8.cloneNode(true);
